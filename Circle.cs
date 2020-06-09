@@ -28,6 +28,23 @@ namespace WhatsTheDiameter
 
         // Need now getDiameter, getCircumference, getArea.
 
+        public double getDiameter()
+        {
+            return this.radius * 2;
+        }
+        public double getCircumference()
+        {
+            return this.getDiameter() * Math.PI;
+        }
+        public double getArea()
+        {
+            return Math.Pow(Math.PI * this.getRadius(), 2);
+        }
+
         // Neet also setRadius.
+        public void setRadius(double newRadius)
+        {
+            this.radius = newRadius;
+        }
     }
 }
